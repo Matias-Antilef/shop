@@ -1,0 +1,24 @@
+.layout-main {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(10, 1fr);
+  background-color: black;
+  height: 100vh;
+}
+
+.top-bar {
+  grid-column: span 6 / span 6;
+}
+
+.left-bar {
+  grid-column: span 2 / span 2;
+  grid-row: span 7 / span 7;
+  grid-row-start: 2;
+}
+
+.children {
+  grid-column: span 4 / span 4;
+  grid-row: span 7 / span 7;
+  grid-column-start: 3;
+  grid-row-start: 2;
+}
